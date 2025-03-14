@@ -19,8 +19,12 @@ body{
    height: 4rem;
    width: 100%;
 }
+
 nav h1:nth-child(2) {
     padding-left: 35%;
+}
+.bold{
+    font-weight: bold;
 }
 
 .main{
@@ -32,7 +36,7 @@ nav h1:nth-child(2) {
     justify-content: center;
 }
 img{
-    width: 100px;
+    width: 110px;
 }
 #image{
     display: flex;
@@ -61,8 +65,14 @@ div[id='card']{
     flex-direction: column;
     align-items: center;
 }
+#card img:first-child:hover{
+    width: 120px;
+}
 #card img:first-child{
+    width: 110px;
     border-radius: 50%;
+    border: .1rem solid;
+    background-color: black;
 }
 .main p:nth-of-type(2)::first-line{
     font-style: italic;
@@ -73,7 +83,8 @@ p{
     word-spacing: .1rem;
     text-align: left;
     letter-spacing: .001rem;
-    
+    margin: 0;
+    line-height: 1.7rem;
 }
 h1{
     font-size: 2rem;
@@ -93,7 +104,7 @@ h1{
 ul li{
     
     list-style: none;
-    color: white;
+    
 }
 
 a{
