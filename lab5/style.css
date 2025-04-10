@@ -85,6 +85,7 @@ header {
     object-fit: cover; 
 }
 
+
 #d {
     grid-area: d;
     background-color: white;
@@ -179,10 +180,13 @@ div[id='card']{
 .pra{
     font-size: 1.3rem;
     word-spacing: .1rem;
-    text-align: left;
+    text-align: center;
     letter-spacing: .001rem;
     margin: 0;
     line-height: 1.7rem;
+}
+h4{
+    color: #e24a1b;
 }
 h1{
     font-size: 2rem;
@@ -198,4 +202,77 @@ h1{
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .level0 {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g"
+            "l"
+            "m";
+    }
+    
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .website {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+    }
+    
+    
+    
+    .pra {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    .level3 {
+        margin: 1rem;
+    }
+    
+    #b {
+        min-height: 250px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .level0 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "a a"
+            "b b"
+            "c c"
+            "d d"
+            "e f"
+            "g g"
+            "l l"
+            "m m";
+    }
+    #g{
+        width: 50%;
+        margin-left :25%;
+
+    }
+    #c{
+
+    }
+    .pra {
+        font-size: 1.1rem;
+    }
 }
