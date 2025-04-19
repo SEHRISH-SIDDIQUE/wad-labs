@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: white;
+    
+  }
+  
+  .main {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "a a"
+      "b b"
+      "c c"
+      "i i"
+      "j j";
+  }
+
+  table{
+    border-collapse: collapse;
+  }
+    td{
+       border: 2px solid black;
+       
+    }
+  
+  .h4{
+    color: black; margin: .2rem;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  a{
+    color: black;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  h5{
+   font-size: 1.1rem;
+   margin: 0.47rem;
+   color: rgb(177, 4, 14);
+  }
+  .a {
+    grid-area: a;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+  }
+  
+  .b { grid-area: b; }
+  
+  .c { grid-area: c;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+align-items: center;
+margin: 2rem;
+padding: 2rem;}
+  
+
+  
+  .i { grid-area: i; }
+  
+  .j { grid-area: j; }
+  
+  .a1 {
+    padding: 1rem;
+    margin: 0;
+    background-color: rgb(177, 4, 14);
+    color: white;
+    text-align: center;
+  }
+  
+  .a1 h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .a1 p {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  
+  .a2 {
+    background-color: white;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .navbar li {
+    margin: 0.5rem 1rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .b {
+    background-image: url('download.jpeg');
+    height: 32vw;
+    background-position: center;
+    position: relative;
+  }
+  
+  .b1 {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .b1 h1 {
+    font-size: 3rem;
+    margin: 0rem;
+  }
+  
+  .b1 p {
+    font-size: 1.5rem;
+  }
+
+
+  .i{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .i h3{
+     color: rgb(177, 4, 14);
+     font-size: 1.3rem;
+   }
+   
+   .i11{
+     margin-bottom: 2rem;
+   }
+   
+   .i11 a{
+       padding: .2em .6em .3em;
+       font-size: 75%;
+       font-weight: 700;
+       text-align: center;
+       border-radius: .25em;
+       color: white;
+       background-color: rgb(177, 4, 14);
+       text-decoration: none;
+       
+   }
+   
+   .i2 a:hover{
+     text-decoration: underline;
+   }
+   
+   
+   .i2 a{
+    color: black;
+     text-decoration: none;
+   }
+   
+   strong{
+     color: rgb(177, 4, 14);
+   }
+   
+    .j {
+     background-color: rgb(177, 4, 14);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+   }
+   
+
+   .repla{
+    display: none;
+  }
+  
+  
+  
+  @media (max-width: 850px) {
+      .a{
+        display: none;
+      }
+      .repla {
+        display: block;
+        grid-area: rep;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+      }
+  
+      .navbar {
+        flex-direction: column;
+        align-items:start;
+        gap: 0.5rem;
+        padding-left: 1rem;
+      }
+      .repla a:hover{
+        text-decoration: underline;
+      }
+    
+      .repla span{
+        font-size: 1.3rem;
+        font-weight: bolder;
+      }
+      summary{
+        text-align: start;
+        padding-left: 1rem;
+      }
+    
+      .navbar li {
+        margin: 0.3rem 0;
+      }
+    
+      .a2 {
+        padding: 0.5rem 0;
+      }
+      
+    .main {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "rep" "b" "c" "d" "e" "g" "h" "i" "j";
+    }
+    
+
+  
+    .b1 h1 {
+      font-size: 1.7rem;
+    }
+    .b1 p {
+      font-size: 1.3rem;
+    }
+  
+    
+    
+  }
+  
+  
+  @media (max-width: 600px) {
+   
+    .a1 h1 {
+      font-size: 1.5rem;
+    }
+  
+    .a1 p,
+    
+    .b1 p
+    .i a {
+      font-size: 0.95rem;
+    }
+    
+    .b1 h1 {
+      font-size: 1.4rem;
+    }
+    .b1 p {
+      font-size: 1rem;
+    }
+    .b{
+      height: 45vw;;
+    }
+  
+    .i h3 {
+      font-size: 1.1rem;
+    }
+  
+    .i address {
+      font-size: 0.85rem;
+    }
+  }
