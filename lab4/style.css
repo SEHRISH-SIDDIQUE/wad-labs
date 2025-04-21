@@ -1,0 +1,118 @@
+:root {
+    --tp-color: rgba(0, 0, 0, 0.1);
+    --radius: 1rem;
+}
+
+body {
+    background-color: #F4EAE0;
+    color: black;
+    margin: 0;
+    font-family: serif;
+}
+
+header {
+    background-color: #af877b;
+    padding: 1rem 0;
+    text-align: center;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.website {
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.tab, .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #af877b;
+    color: white;
+}
+
+caption {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.form-example {
+    width: 30rem;
+    max-width: 350px;
+}
+
+fieldset {
+    border: 2px solid #af877b;
+    padding: 1rem;
+    border-radius: var(--radius);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+legend {
+    font-weight: bold;
+    color: #af877b;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: #af877b;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #af877b;
+    color: white;
+    margin-top: 2rem;
+}

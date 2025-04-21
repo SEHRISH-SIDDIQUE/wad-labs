@@ -1,0 +1,115 @@
+:root{
+    --tp-color:  rgba(0, 0, 0, 0.1);
+    --radius: 1rem;
+}
+body{
+    background-image: linear-gradient(to right bottom, #e65a94, #C471ED, #12C2E9);
+    color: white;
+   margin: 0;
+   font-family: serif;
+}
+.navigation{
+    display: flex;
+   align-items: center;
+   justify-content: start;
+   text-align:center ;
+   background-color: var(--tp-color);
+   border-end-start-radius: var(--radius);
+   border-end-end-radius: var(--radius);
+   height: 4rem;
+   width: 100%;
+}
+
+nav h1:nth-child(2) {
+    padding-left: 35%;
+}
+.bold{
+    font-weight: bold;
+}
+
+.main{
+    color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 110px;
+}
+#image{
+    display: flex;
+   justify-content: space-between;
+   line-height: 4rem;
+}
+
+.myself{
+    background: var(--tp-color);
+    padding: 3rem;
+    margin: 3rem;
+    border-radius: var(--radius);
+}
+#profile{
+    background: var(--tp-color);
+    padding: 3rem;
+    border-radius: var(--radius);
+   margin-bottom: 3rem;
+   display: flex;
+   width: 15rem;
+   box-shadow: .2rem .3rem .2rem .2rem rgb(66, 64, 64);
+}
+div[id='card']{
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#card img:first-child:hover{
+    width: 120px;
+}
+#card img:first-child{
+    width: 110px;
+    border-radius: 50%;
+    border: .1rem solid;
+    background-color: black;
+}
+.main p:nth-of-type(2)::first-line{
+    font-style: italic;
+    font-weight: 200;
+}
+p{
+    font-size: 1.3rem;
+    word-spacing: .1rem;
+    text-align: left;
+    letter-spacing: .001rem;
+    margin: 0;
+    line-height: 1.7rem;
+}
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.head{
+    font-size: 1.6rem;
+   
+}
+.txt{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+a{
+    color: blue;
+text-decoration: none;
+   
+}
+ 
